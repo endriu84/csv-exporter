@@ -1,0 +1,11 @@
+plugin-slug: wp-desk-plugin-template
+plugin-file: plugin-template/plugin-template.php
+plugin-title: WP Desk Plugin Template
+plugin-product-id: WP Desk Plugin Template
+plugins:
+    repository:
+        - woocommerce
+    activate:
+        - woocommerce
+prepare-database:
+    - option set woocommerce_show_marketplace_suggestions "no"

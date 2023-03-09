@@ -1,0 +1,21 @@
+<phpunit bootstrap="tests/integration/bootstrap.php"
+         backupGlobals="false"
+     >
+    <testsuites>
+        <testsuite>
+            <directory prefix="test-" suffix=".php">./tests/integration</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+
+    <php>
+        <env name="WP_DEVELOP_DIR" value="/tmp/wordpress-develop"/>
+        <env name="WC_DEVELOP_DIR" value="/tmp/woocommerce"/>
+    </php>
+
+</phpunit>

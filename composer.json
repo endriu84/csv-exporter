@@ -1,0 +1,70 @@
+{
+	"name": "wpdesk/plugin-template",
+	"authors": [
+		{
+			"name": "Krzysiek",
+			"email": "krzysiek@wpdesk.net"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"WPDesk\\PluginTemplate\\": "src"
+		},
+		"classmap": [
+			"vendor_prefixed"
+		]
+	},
+	"autoload-dev": {
+	},
+	"config": {
+		"autoloader-suffix": "PluginTemplate",
+		"sort-packages": true,
+		"platform": {
+			"php": "7.2"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"cweagans/composer-patches": true,
+			"wpdesk/wp-codeception": true,
+			"wpdesk/wp-wpdesk-composer": true,
+			"kylekatarnls/update-helper": true
+		}
+	},
+	"prefer-stable": true,
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=7.2",
+		"psr/log": "^1.1.4",
+		"wpdesk/wp-wpdesk-helper-override": "^1.1.0"
+	},
+	"require-dev": {
+		"10up/wp_mock": "*",
+		"phpunit/phpunit": "<7",
+		"wpdesk/wp-builder": "^2.0.0",
+		"wpdesk/wp-codeception": "^2.7.4",
+		"wpdesk/wp-plugin-flow-free": "^1.0.2",
+		"wpdesk/wp-wpdesk-composer": "^2.20.0"
+	},
+	"extra": {
+		"text-domain": "plugin-template",
+		"translations-folder": "lang",
+		"translation-file-headers": {
+			"Project-Id-Version": "Plugin Template",
+			"Last-Translator": "Grzegorz Rola <grola@wpdesk.pl>",
+			"X-Poedit-WPHeader": "plugin-template.php"
+		},
+		"po-files": {
+			"pl_PL": "pl_PL.po"
+		},
+		"php-requires": "7.2"
+	},
+	"scripts": {
+		"test": "echo composer is alive",
+		"phpcs": "phpcs",
+		"phpcbf": "phpcbf src",
+		"phpunit-unit": "phpunit --configuration phpunit-unit.xml --coverage-text --colors=never",
+		"phpunit-unit-coverage": "phpunit --configuration phpunit-unit.xml --coverage-html build-coverage",
+		"phpunit-integration": "phpunit --configuration phpunit-integration.xml --coverage-text --colors=never",
+		"docs": "apigen generate"
+	}
+}

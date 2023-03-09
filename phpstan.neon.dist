@@ -1,0 +1,13 @@
+# Start command: composer update --classmap-authoritative && vendor/bin/phpstan analyze
+
+includes:
+    - vendor/wpdesk/wp-wpdesk-composer/director/vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - vendor/wpdesk/wp-wpdesk-composer/director/vendor/szepeviktor/phpstan-wordpress/extension.neon
+parameters:
+    level: max
+    paths:
+        - %currentWorkingDirectory%/src/
+    bootstrapFiles:
+        - %currentWorkingDirectory%/vendor/autoload.php
+        - %currentWorkingDirectory%/vendor/wpdesk/wp-wpdesk-composer/director/woocommerce-stubs.php
+    ignoreErrors:

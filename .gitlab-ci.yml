@@ -1,0 +1,14 @@
+variables:
+  DISABLE_PHP_5_5: 1
+  DISABLE_ACCEPTANCE: "1"
+  DISABLE_FUNCTIONAL: "1"
+  DISABLE_INTEGRATION_TESTS: "1"
+  DISABLE_CODECEPTION: 1
+  CODECEPTION_PARALLEL: 1
+
+# only for free plugin
+include: 'https://gitlab.com/wpdesk/gitlab-ci/raw/master/gitlab-ci-free.yml'
+
+integration:earliest:
+    when: manual
+
