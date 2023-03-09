@@ -20,16 +20,16 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: plugin-template.php\n"
+"X-Poedit-WPHeader: csv-exporter.php\n"
 "X-Poedit-SearchPath-0: src\n"
 
 #. Plugin Name of the plugin/theme
 #. Description of the plugin/theme
-msgid "WP Desk Plugin Template"
+msgid "CSV Exporter"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://www.wpdesk.net/products/plugin-template/"
+msgid "https://www.wpdesk.net/products/csv-exporter/"
 msgstr ""
 
 #. Author of the plugin/theme

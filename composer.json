@@ -1,5 +1,5 @@
 {
-	"name": "wpdesk/plugin-template",
+	"name": "wpdesk/csv-exporter",
 	"authors": [
 		{
 			"name": "Krzysiek",
@@ -8,7 +8,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"WPDesk\\PluginTemplate\\": "src"
+			"WPDesk\\CSVExporter\\": "src"
 		},
 		"classmap": [
 			"vendor_prefixed"
@@ -17,7 +17,7 @@
 	"autoload-dev": {
 	},
 	"config": {
-		"autoloader-suffix": "PluginTemplate",
+		"autoloader-suffix": "CSVExporter",
 		"sort-packages": true,
 		"platform": {
 			"php": "7.2"
@@ -46,12 +46,12 @@
 		"wpdesk/wp-wpdesk-composer": "^2.20.0"
 	},
 	"extra": {
-		"text-domain": "plugin-template",
+		"text-domain": "csv-exporter",
 		"translations-folder": "lang",
 		"translation-file-headers": {
 			"Project-Id-Version": "Plugin Template",
 			"Last-Translator": "Grzegorz Rola <grola@wpdesk.pl>",
-			"X-Poedit-WPHeader": "plugin-template.php"
+			"X-Poedit-WPHeader": "csv-exporter.php"
 		},
 		"po-files": {
 			"pl_PL": "pl_PL.po"

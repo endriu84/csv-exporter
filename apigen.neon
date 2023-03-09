@@ -10,7 +10,7 @@ exclude:
 
 charset: [UTF-8]
 main: Wordpress plugin
-title: plugin-template
+title: csv-exporter
 baseUrl: "/"
 
 templateTheme: default

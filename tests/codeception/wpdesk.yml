@@ -1,7 +1,7 @@
-plugin-slug: wp-desk-plugin-template
-plugin-file: plugin-template/plugin-template.php
-plugin-title: WP Desk Plugin Template
-plugin-product-id: WP Desk Plugin Template
+plugin-slug: wp-desk-csv-exporter
+plugin-file: csv-exporter/plugin-template.php
+plugin-title: CSV Exporter
+plugin-product-id: CSV Exporter
 plugins:
     repository:
         - woocommerce

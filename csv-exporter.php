@@ -1,18 +1,18 @@
 <?php
 /**
- * Plugin Name: WP Desk Plugin Template
- * Plugin URI: https://www.wpdesk.net/products/plugin-template/
- * Description: WP Desk Plugin Template
+ * Plugin Name: CSV Exporter
+ * Plugin URI: https://www.wpdesk.net/products/csv-exporter/
+ * Description: CSV Exporter
  * Version: 1.0.0
  * Author: WP Desk
  * Author URI: https://www.wpdesk.net/
- * Text Domain: plugin-template
+ * Text Domain: csv-exporter
  * Domain Path: /lang/
  * ​
  * Requires at least: 5.7
- * Tested up to: 6.0
- * WC requires at least: 6.6
- * WC tested up to: 7.0
+ * Tested up to: 6.1
+ * WC requires at least: 7.1
+ * WC tested up to: 7.5
  * Requires PHP: 7.2
  * ​
  * Copyright 2022 WP Desk Ltd.
@@ -30,7 +30,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-use WPDesk\PluginTemplate\Plugin;
+use WPDesk\CSVExporter\Plugin;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -39,10 +39,10 @@ require_once __DIR__ . '/vendor/autoload.php';
 /* THESE TWO VARIABLES CAN BE CHANGED AUTOMATICALLY */
 $plugin_version = '1.0.0';
 
-$plugin_name        = 'WP Desk Plugin Template';
+$plugin_name        = 'CSV Exporter';
 $plugin_class_name  = Plugin::class;
-$plugin_text_domain = 'plugin-template';
-$product_id         = 'WP Desk Plugin Template';
+$plugin_text_domain = 'csv-exporter';
+$product_id         = 'CSV Exporter';
 $plugin_file        = __FILE__;
 $plugin_dir         = __DIR__;
 

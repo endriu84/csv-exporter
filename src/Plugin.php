@@ -3,11 +3,11 @@
  * Plugin main class.
  */
 
-namespace WPDesk\PluginTemplate;
+namespace WPDesk\CSVExporter;
 
-use PluginTemplateVendor\WPDesk\PluginBuilder\Plugin\AbstractPlugin;
-use PluginTemplateVendor\WPDesk\PluginBuilder\Plugin\HookableCollection;
-use PluginTemplateVendor\WPDesk\PluginBuilder\Plugin\HookableParent;
+use CSVExporterVendor\WPDesk\PluginBuilder\Plugin\AbstractPlugin;
+use CSVExporterVendor\WPDesk\PluginBuilder\Plugin\HookableCollection;
+use CSVExporterVendor\WPDesk\PluginBuilder\Plugin\HookableParent;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 
