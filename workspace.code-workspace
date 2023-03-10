@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"name": "csv-exporter",
+			"path": "."
+		},
+		{
+			"name": "woocommerce",
+			"path": "../woocommerce/plugins/woocommerce"
+		},
+		{
+			"name": "wordpress",
+			"path": "/home/andrzej/wp-env/fff169e1da5c35255acbf5a9bc079d31/WordPress"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [{
+			"name": "Listen for Xdebug",
+			"type": "php",
+			"request": "launch",
+			"port": 9003,
+			"pathMappings": {
+				"/var/www/html": "${workspaceFolder:wordpress}",
+				"/var/www/html/wp-content/plugins/woocommerce": "${workspaceFolder:woocommerce}",
+				"/var/www/html/wp-content/plugins/csv-exporter": "${workspaceFolder:csv-exporter}",
+			}
+		}]
+	}
+}

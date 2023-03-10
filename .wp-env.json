@@ -1,0 +1,8 @@
+{
+	"phpVersion": "7.3",
+	"core": null,
+	"plugins": [
+		".",
+		"../woocommerce/plugins/woocommerce"
+	]
+}

@@ -9,7 +9,7 @@
  * Text Domain: csv-exporter
  * Domain Path: /lang/
  * ​
- * Requires at least: 5.7
+ * Requires at least: 5.8
  * Tested up to: 6.1
  * WC requires at least: 7.1
  * WC tested up to: 7.5

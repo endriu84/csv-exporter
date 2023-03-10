@@ -7,13 +7,19 @@
 		"@wordpress/i18n": "^4.18.0"
 	},
 	"devDependencies": {
-		"mati-mix": "^2.1.1"
+		"@wordpress/env": "^5.13.0",
+		"mati-mix": "^2.1.1",
+		"npm": "^9.6.1"
 	},
 	"scripts": {
 		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"dev": "npm run development",
 		"watch": "npm run development -- --watch",
-		"prod": "npm run production"
+		"prod": "npm run production",
+		"unit-not-work": "pnpm wp-env run phpunit phpunit -c /var/www/html/wp-content/plugins/csv-exporter/phpunit-unit.xml --verbose",
+		"test:php:unit": "pnpm wp-env run tests-wordpress php /var/www/html/wp-content/plugins/csv-exporter/vendor/bin/phpunit -c /var/www/html/wp-content/plugins/csv-exporter/phpunit-unit.xml --coverage-text --colors=never",
+		"test:php:integration": "pnpm wp-env run phpunit phpunit -c /var/www/html/wp-content/plugins/csv-exporter/phpunit-integration.xml --verbose",
+		"composer:update": "pnpm wp-env run wordpress /var/www/html/wp-content/plugins/csv-exporter/vendor/bin/composer -d /var/www/html/wp-content/plugins/csv-exporter update"
 	}
 }
