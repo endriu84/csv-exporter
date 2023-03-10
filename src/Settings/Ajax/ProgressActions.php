@@ -37,6 +37,8 @@ class ProgressActions implements Hookable
      */
 	public function run_export()
 	{
+		check_ajax_referer( 'csv-exporter-run-admin-nonce', 'nonce' );
+
 		try {
 			$controller = new ExportController(
 				new CSVFile( $this->cache_path ),
@@ -54,7 +56,6 @@ class ProgressActions implements Hookable
 				// go to run_export
 				\wp_send_json_success([
 					'status' => $controller->get_status(),
-					'progress' => $controller->get_progress(),
 					'action' => 'run_export',
 					'nonce' => \wp_create_nonce( 'csv-exporter-run-admin-nonce' )
 				]);

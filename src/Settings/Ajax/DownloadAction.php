@@ -25,7 +25,7 @@ class DownloadAction implements Hookable {
 	 */
 	public function download_csv() {
 
-		// wp_die( 'Invalid hash!' );
+		check_ajax_referer( 'csv-exporter-download-csv-nonce', 'nonce' );
 
 		if ( ! file_exists( $filename ) ) {
 			wp_die( 'File does not exists!' );

@@ -114,7 +114,7 @@ class Page implements Hookable, HookablePluginDependant {
 		wp_enqueue_media();
 		wp_localize_script( 'csv-exporter-admin', 'csv_exporter', [
 			'admin_url' => \esc_url( \admin_url( 'admin-ajax.php' ) ),
-			'nonce' => \wp_create_nonce( 'csv-exporter-setup-admin-nonce' )
+			'nonce' => \wp_create_nonce( 'csv-exporter-run-admin-nonce' )
 		] );
 		wp_enqueue_script( 'csv-exporter-admin' );
 	}

@@ -56,11 +56,6 @@ class ExportController {
 		return $this->export_strategy->get_download_filename();
 	}
 
-	public function get_progress(): string {
-
-		return $this->state_manager->get_chunk_page() . ' out of ' . $this->data_provider->get_total_products();
-	}
-
 	public function export(): void {
 
 		// not the best option, as it requires lot of unnecessery files
@@ -79,8 +74,6 @@ class ExportController {
 
 			$this->data_provider->setStateManager($this->state_manager);
 			$this->data_provider->load();
-
-			$this->export_strategy->setStateManager($this->state_manager);
 
 			$first_chunk = false;
 			if ( StateManager::FIRST_CHUNK_PAGE === $this->state_manager->get_chunk_page() ) {
